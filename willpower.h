@@ -1,3 +1,4 @@
+//Essentials needed to run the class
 #include <iostream>
 #include <memory>
 #include <string>
@@ -13,6 +14,7 @@
 #include <Timer.h>
 #include <CameraServer.h>
 class Willpower{
+	//Instantiate Variables for functions using controller
 	bool A = xbox.GetAButton();//check if A button is pressed
 	bool B = xbox.GetBButton();//check if B button is pressed
 	bool X = xbox.GetXButton();//check if X button is pressed
@@ -33,8 +35,8 @@ class Willpower{
 	char c = "b";
 	char x = "x";
 	char y = "y";
-	Willpower(int LServoPort, int RServoPort, int FRP, int BRP, int FLP, int BLP);
-	Willpower(int FRP, int BRP, int FLP, int BLP);
+	Willpower(int LServoPort, int RServoPort, int FRP, int BRP, int FLP, int BLP);//constructor for willpower
+	Willpower(int FRP, int BRP, int FLP, int BLP);//constructor for willpower
 	frc::Servo LServo {LServoPort}; //constructor for left servo
 	frc::Servo RServo {RServoPort}; // constructor for right servo
 	frc::RobotDrive myRobot { FLP, BLP, FRP, BRP};//constructor for myRobot, paramaters are ports
