@@ -59,7 +59,7 @@ class Willpower{
       
                  std::string returnGroup = "";
       
-                 for(int i - 0; i < charGroup.length(); i++){
+                 for(int i = 0; i < charGroup.length(); i++){
                        returnGroup += putchar(tolower(charGroup[i]));
                  }
                  return returnGroup;
